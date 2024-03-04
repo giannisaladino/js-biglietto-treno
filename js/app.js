@@ -14,8 +14,8 @@ console.log(distanza);
 
 // 2 Chiedere l'eta del passeggero e stampare
 
-const età = parseInt(prompt('Inserisci la tua età')); //number
-console.log(età);
+const age = parseInt(prompt('Inserisci la tua età')); //number
+console.log(age);
 
 
 // 3 Calcolare il prezzo totale del viaggio in base all'età del passeggero
@@ -27,18 +27,18 @@ let total = distanza * 0.21; //number
 
 let sconto;
 
-if(età < 18) {
+if(age < 18) {
     sconto = total * 0.20;
     total = total - sconto;
-    console.log(total);
+    console.log(total.toFixed(2));
 }
 
 // ALTRIMENTI SE il passeggero è un over 65 avrà uno sconto del 40%
 
- else if(età > 65) {
+ else if(age > 65) {
     sconto = total * 0.40;
     total = total - sconto;
-    console.log(total);
+    console.log(total.toFixed(2));
  }
 
 // ALTRIMENTI stampa il prezzo fisso
