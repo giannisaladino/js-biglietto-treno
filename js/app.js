@@ -44,5 +44,5 @@ if(age < 18) {
 // ALTRIMENTI stampa il prezzo fisso
 
  else {
-    console.log(total);
+    console.log(total.toFixed(2));
  }
